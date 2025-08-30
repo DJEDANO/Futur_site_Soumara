@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant Libanais Soumara à Moundou, Tchad. Découvrez nos spécialités libanaises et tchadiennes, réservez une table en ligne.">
+    <title>Restaurant Libanais Soumara - Moundou, Tchad</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/logo.png" alt="Restaurant Soumara" height="50" class="me-2">
+                    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <a class="btn btn-primary" href="#reservation">Réserver</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero avec Carousel -->
+<section id="accueil" class="hero-section">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="./assets/hero1.jpeg" class="d-block w-100 vh-100 object-fit-cover" alt="Restaurant Soumara extérieur">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-3 fw-bold">Restaurant Libanais Soumara</h1>
+          <p class="lead">Saveurs authentiques du Liban au cœur de Moundou</p>
+          <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-3">
+            <a href="#menu" class="btn btn-primary btn-lg px-4 py-2">Découvrir le menu</a>
+            <a href="#reservation" class="btn btn-outline-light btn-lg px-4 py-2">Réserver une table</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="./assets/hero2.png" class="d-block w-100 vh-100 object-fit-cover" alt="Plats libanais">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-3 fw-bold">Des saveurs uniques</h1>
+          <p class="lead">Découvrez nos mezzés, grillades et douceurs orientales</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="./assets/hero1.jpeg" class="d-block w-100 vh-100 object-fit-cover" alt="Ambiance du restaurant">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-3 fw-bold">Un cadre chaleureux</h1>
+          <p class="lead">Partagez un moment convivial en famille ou entre amis</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contrôles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+</section>
+
+
+  <section class="intro-section py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 intro-image">
+                <img src="./assets/bienvenue.png" alt="Intérieur du restaurant Soumara" class="img-fluid">
+            </div>
+            <div class="col-lg-6 intro-text">
+                <h2 class="section-title">Bienvenue au Restaurant Soumara</h2>
+                <p class="lead">Découvrez une expérience culinaire unique alliant les saveurs authentiques du Liban aux influences locales tchadiennes.</p>
+                <p>Notre chef prépare chaque plat avec passion en utilisant des ingrédients frais et de qualité. Que vous soyez un habitué ou un nouveau venu, nous vous promettons un moment gastronomique inoubliable dans une ambiance chaleureuse et conviviale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section Spécialités -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title mb-5">Nos spécialités</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 specialty-card border-0 shadow">
+                        <div class="specialty-image overflow-hidden">
+                            <img src="./assets/mezze.jpeg" class="card-img-top" alt="Assortiment de mezzés libanais">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mezzés Libanais</h3>
+                            <p class="card-text">Une sélection de hors-d'œuvre traditionnels : houmous, taboulé, baba ganoush et bien plus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 specialty-card border-0 shadow">
+                        <div class="specialty-image overflow-hidden">
+                            <img src="./assets/grilladeee.jpeg" class="card-img-top" alt="Plateau de grillades">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Grillades</h3>
+                            <p class="card-text">Viandes marinées et grillées au charbon de bois selon les techniques ancestrales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 specialty-card border-0 shadow">
+                        <div class="specialty-image overflow-hidden">
+                            <img src="./assets/patiserie.jpeg" class="card-img-top" alt="Desserts orientaux">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pâtisseries Orientales</h3>
+                            <p class="card-text">Baklava, knafeh et autres douceurs sucrées pour terminer votre repas en beauté.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title mb-5">Notre Menu</h2>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                <button class="filter-btn btn btn-outline-primary active" data-category="all">Tout</button>
+                <button class="filter-btn btn btn-outline-primary" data-category="entrees">Entrées</button>
+                <button class="filter-btn btn btn-outline-primary" data-category="plats">Plats Principaux</button>
+                <button class="filter-btn btn btn-outline-primary" data-category="desserts">Desserts</button>
+                <button class="filter-btn btn btn-outline-primary" data-category="boissons">Boissons</button>
+            </div>
+            
+            <div class="row menu-items">
+                <!-- Les éléments du menu seront chargés dynamiquement par JavaScript -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-dark btn-lg">
+                    <i class="fas fa-download me-2"></i> Télécharger le menu complet (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title mb-5">Galerie</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="./assets/platlibanais.jpeg" alt="Plat libanais" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="./assets/interieurduresto.png" alt="Intérieur du restaurant" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="./assets/preparationplat.png" alt="Préparation des plats" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="./assets/clients.jpeg" alt="Client heureux" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="./assets/dessert.jpeg" alt="Dessert" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="./assets/evenementauresto.jpeg" alt="Événement au restaurant" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Section À propos -->
+<section id="about" class="about-section py-5">
+    <div class="container py-5">
+        <h2 class="text-center section-title mb-5">À propos de nous</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-7 about-text mb-4 mb-lg-0">
+                <h3>Notre histoire</h3>
+                <p>Fondé en 2010, le Restaurant Soumara est rapidement devenu une institution culinaire à Moundou. Notre fondateur, passionné de cuisine libanaise, a voulu partager les saveurs authentiques de son pays natal avec la communauté tchadienne.</p>
+                <p>Aujourd'hui, notre équipe de chefs talentueux perpétue cette tradition en créant des plats qui marient harmonieusement les influences libanaises et tchadiennes, le tout préparé avec des ingrédients frais et locaux.</p>
+                
+                <h3 class="mt-4">Notre philosophie</h3>
+                <p>Chez Soumara, nous croyons que la nourriture est bien plus qu'une simple nécessité - c'est un art, une culture, et une manière de rassembler les gens. Chaque plat que nous servons raconte une histoire et est préparé avec amour et attention.</p>
+            </div>
+            <div class="col-lg-5 about-image">
+                <img src="./assets/equipe.jpeg" alt="Équipe du restaurant Soumara" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section Témoignages -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title mb-5">Ce que disent nos clients</h2>
+            
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-content bg-white p-4 rounded shadow mx-auto" style="max-width: 800px;">
+                            <p class="fs-5 fst-italic">"Le meilleur restaurant libanais de Moundou ! Les mezzés sont délicieux et l'accueil est toujours chaleureux. Je recommande vivement !"</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="fw-bold">DJedano G.</span>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-content bg-white p-4 rounded shadow mx-auto" style="max-width: 800px;">
+                            <p class="fs-5 fst-italic">"Une découverte extraordinaire. Les saveurs authentiques du Liban avec une touche locale. Le service est impeccable et les prix très raisonnables."</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="fw-bold">Josue Djedanoum</span>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-content bg-white p-4 rounded shadow mx-auto" style="max-width: 800px;">
+                            <p class="fs-5 fst-italic">"L'endroit parfait pour un dîner en famille ou entre amis. L'ambiance est conviviale et les plats sont toujours excellents. Mention spéciale pour les desserts !"</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="fw-bold">Adoumngué Djedano</span>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réservation -->
+    <section id="reservation" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title mb-5">Réservez votre table</h2>
+            
+            <div class="row">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-4">
+                            <form id="booking-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Nom complet</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Téléphone</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="date" class="form-label">Date</label>
+                                        <input type="date" class="form-control" id="date" name="date" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="time" class="form-label">Heure</label>
+                                        <input type="time" class="form-control" id="time" name="time" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="guests" class="form-label">Nombre de personnes</label>
+                                        <select class="form-select" id="guests" name="guests" required>
+                                            <option value="1">1 personne</option>
+                                            <option value="2">2 personnes</option>
+                                            <option value="3">3 personnes</option>
+                                            <option value="4">4 personnes</option>
+                                            <option value="5">5 personnes</option>
+                                            <option value="6">6 personnes</option>
+                                            <option value="7+">7+ personnes</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="message" class="form-label">Message spécial (optionnel)</label>
+                                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">Réserver maintenant</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Horaires d'ouverture</h3>
+                            <ul class="list-unstyled">
+                                <li class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                    <span>Lundi - Jeudi:</span>
+                                    <span>11h - 22h</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                    <span>Vendredi - Samedi:</span>
+                                    <span>11h - 23h</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                    <span>Dimanche:</span>
+                                    <span>12h - 21h</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="mt-5 mb-4">Contact</h3>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <span>Avenue du Général, Moundou, Tchad</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-phone text-primary me-3"></i>
+                                <span>+235 66 91 66 34</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp text-primary me-3"></i>
+                                <span>+235 60 35 76 94</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title mb-5">Contactez-nous</h2>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Informations de contact</h3>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <span><strong>Adresse:</strong> Avenue du Général, Moundou, Tchad</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-phone text-primary me-3"></i>
+                                <span><strong>Téléphone:</strong> +235 66 91 66 34</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fab fa-whatsapp text-primary me-3"></i>
+                                <span><strong>WhatsApp:</strong> +235 60 35 76 94</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <span><strong>Email:</strong> contact@soumara.td</span>
+                            </div>
+                            
+                            <h3 class="mt-4 mb-3">Suivez-nous</h3>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-primary rounded-circle social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-primary rounded-circle social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-primary rounded-circle social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Envoyez-nous un message</h3>
+                            <form id="contact-form">
+                                <div class="mb-3">
+                                    <label for="contact-name" class="form-label">Nom complet</label>
+                                    <input type="text" class="form-control" id="contact-name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="contact-email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-subject" class="form-label">Sujet</label>
+                                    <input type="text" class="form-control" id="contact-subject" name="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="contact-message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Nous trouver</h3>
+                            <div class="map-placeholder bg-secondary bg-opacity-10 rounded d-flex flex-column align-items-center justify-content-center" style="height: 300px;">
+                                <i class="fas fa-map-marked-alt text-primary mb-3" style="font-size: 3rem;"></i>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.4167551404767!2d16.071558073303926!3d8.555862491487801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73f6aad0cf8b9%3A0x5f5dc8639376ad9a!2sAlimentation%20et%20Restaurant%20SOUMARA!5e0!3m2!1sfr!2std!4v1756511150656!5m2!1sfr!2std" 
+                                width="350" 
+                                height="650"
+                                 style="border:0;" 
+                                 allowfullscreen="" 
+                                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <p class="text-center">Avenue du Général, Moundou, Tchad</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/logo.png" alt="Logo Restaurant Soumara" style="max-width: 220px; height: auto;">
+                    <p>Saveurs authentiques du Liban au cœur de Moundou, Tchad.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="mb-4">Liens rapides</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#accueil" class="text-white text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">À propos</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h4 class="mb-4">Horaires</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Lun-Jeu: 11h - 22h</li>
+                        <li class="mb-2">Ven-Sam: 11h - 23h</li>
+                        <li class="mb-2">Dim: 12h - 21h</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="mb-4">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <span>Avenue du Général, Moundou</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            <span>+235 66 91 66 34</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <span>contact@soumara.td</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Restaurant Soumara. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

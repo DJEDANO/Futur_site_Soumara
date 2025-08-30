@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #8E3200;
+    --secondary-color: #A64B2A;
+    --accent-color: #D7A86E;
+    --light-color: #FFEBC1;
+    --dark-color: #3B2F2F;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    padding-top: 76px; /* Pour compenser la navbar fixe */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-section .carousel,
+.hero-section .carousel-inner,
+.hero-section .carousel-item {
+    height: 100%;
+}
+
+.hero-section .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-section .carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.hero-section h1, 
+.hero-section p {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+/* ---------------- SECTION TITLES ---------------- */
+.section-title {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* ---------------- SPECIALTIES ---------------- */
+.specialty-card {
+    transition: transform 0.3s ease;
+}
+
+.specialty-card:hover {
+    transform: translateY(-10px);
+}
+
+.specialty-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.specialty-image img {
+    transition: transform 0.5s ease;
+}
+
+.specialty-card:hover .specialty-image img {
+    transform: scale(1.1);
+}
+
+/* ---------------- MENU ITEMS ---------------- */
+.menu-item {
+    border-bottom: 1px dashed #dee2e6;
+    padding: 1rem 0;
+}
+
+/* ---------------- GALLERY ---------------- */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ---------------- SOCIAL ICONS ---------------- */
+.social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------- TESTIMONIALS ---------------- */
+.testimonial-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------------- BUTTONS ---------------- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* ---------------- INTRODUCTION SECTION ---------------- */
+.intro-section .row {
+    display: flex;
+    align-items: stretch; /* étirer les deux colonnes à la même hauteur */
+    gap: 30px;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.intro-text {
+    flex: 1;
+    background-color: var(--light-color); /* couleur de fond du texte */
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---------------- ABOUT SECTION ---------------- */
+.about-section .row {
+    display: flex;
+    align-items: stretch; /* texte et image même hauteur */
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Pour écrans plus petits : empiler les colonnes */
+@media (max-width: 768px) {
+    .intro-section .row,
+    .about-section .row {
+        flex-direction: column;
+    }
+
+    .intro-image img,
+    .about-image img {
+        height: auto;
+    }
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p.lead {
+        font-size: 1.1rem;
+    }
+}
